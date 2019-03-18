@@ -1,4 +1,5 @@
 # Mongodumper
+[![](https://images.microbadger.com/badges/image/juanitomint/mongodumper.svg)](https://microbadger.com/images/juanitomint/mongodumper "Get your own image badge on microbadger.com")
 
 Mongodumper is a Docker microservice that makes periodic backups of your MongoDB
 database. It saves these backups as gzipped archive files to a Docker volume
