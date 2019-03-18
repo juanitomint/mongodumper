@@ -13,6 +13,7 @@ docker run -it --rm \
  -e NO_CRON=true \
  -e QUIET=false \
  -e KEEP_MOST_RECENT_N=2 \
+ -e MONGO_PARALLEL=1 \
  --link $1:mongo \
  juanitomint/mongodumper
  
