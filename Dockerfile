@@ -5,6 +5,7 @@ ENV NO_CRON="false" \
     QUIET="false" \
     MONGO_HOST="mongo"\
     MONGO_PORT="27017"\
+    MONGO_AUTHDB="admin"\
     MONGO_USER=""\
     MONGO_PASS=""\
     MONGO_PARALLEL="4"\

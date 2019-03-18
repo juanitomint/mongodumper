@@ -11,12 +11,18 @@ old archives so they don't fill up your host's hard drive.
 
 The following environment variables can be used to configure Mongodumper:
 
-| Variable Name        | Default Value                    | Description                      |
+| Variable Name        |  Value                           | Description                      |
 |----------------------|----------------------------------|----------------------------------|
 | `MONGO_HOST`         | `mongo`                          | Hostname to connect to           |
 | `MONGO_PORT`         | `27017`                          | Port number to connect to        |
+| `MONGO_AUTHDB`       | `admin`                          | authentication db                |
+| `MONGO_USER`         | ``                               | User with backup provileges      |
+| `MONGO_PASS`         | ``                               | Password                         |
+| `NO_CRON`            | `false / true`                   | run backup task right away       |
+| `QUIET`              | `false / true`                   | run backup task right away       |
 | `KEEP_MOST_RECENT_N` | `14`                             | How many backups to keep         |
 | `CRON_SCHEDULE`      | `0 0 * * *` (daily at 00:00 UTC) | How often to create a new backup |
+| `MONGO_PARALLEL`     | `4`                              | How many colletcions to process  |
 
 ## Example
 
