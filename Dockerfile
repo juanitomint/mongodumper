@@ -7,7 +7,7 @@ ENV NO_CRON="false" \
     MONGO_PORT="27017"\
     MONGO_USER=""\
     MONGO_PASS=""\
-    MONGO_PORT="27017"\
+    MONGO_PARALLEL="4"\
     FILE_PREFIX=""
 # add Tini (a simple init; ensures that zombie processes are reaped properly)
 RUN apk --update add --no-cache tini
