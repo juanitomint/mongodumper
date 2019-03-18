@@ -27,7 +27,7 @@ services:
     image: mongo
 
   mongodumper:
-    image: jakelow/mongodumper
+    image: juanitomint/mongodumper
     volumes:
       - mongo_backups:/backups
     environment:
