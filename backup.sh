@@ -17,7 +17,7 @@ ${add_quiet} \
 --authenticationDatabase ${AUTHDB:-admin} \
 --username=${MONGO_USER:-} \
 --password=${MONGO_PASS:-} \
---numParallelCollections ${MONGO_PARALLEL:-4}
+--numParallelCollections ${MONGO_PARALLEL:-4} \
 --archive --gzip > "$FILENAME"
 
 SIZE="$(ls -lh "$FILENAME" | awk '{print $5}')"
