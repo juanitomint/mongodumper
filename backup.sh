@@ -13,11 +13,11 @@ $silent
 time mongodump \
 -h ${MONGO_HOST:-mongo} \
 -p ${MONGO_PORT:-27017} \
+${add_quiet} \
 --authenticationDatabase ${AUTHDB:-admin} \
 --username=${MONGO_USER:-} \
 --password=${MONGO_PASS:-} \
 --numParallelCollections ${MONGO_PARALLEL:-4}
-$add_quiet \
 --archive --gzip > "$FILENAME"
 
 SIZE="$(ls -lh "$FILENAME" | awk '{print $5}')"
